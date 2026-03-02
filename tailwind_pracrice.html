@@ -7,14 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div class="bg-red-500 h-20 w-20 ">grid_1</div>
-      <div class="bg-green-500 h-20 w-20">grid_2</div>
-      <div class="bg-blue-500 h-20 w-20">grid_3</div>
-      <div class="bg-yellow-500 h-20 w-20">grid_4</div>
-      <div class="bg-purple-500 h-20 w-20">grid_5</div>
-      <div class="bg-pink-500 h-20 w-20">grid_6</div>
-      <div class="bg-indigo-500 h-20 w-20">grid_7</div>
-    </div>
+    <div class="relative h-40">
+
+      <div class="absolute left-10 top-10 w-32 h-32 bg-blue-500 text-white flex items-center justify-center z-20">
+        Blue
+      </div>
+
+       <div class="absolute left-20 top-20 w-32 h-32 bg-red-500 text-white flex items-center justify-center z-30">
+        Red
+      </div>
+
+   </div>
   </body>
 </html>
