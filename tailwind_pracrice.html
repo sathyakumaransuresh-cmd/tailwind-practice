@@ -1,22 +1,99 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Tailwind Practice
-    </title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div class="relative h-40">
+<head>
+  <title>Responsive Practice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
 
-      <div class="absolute left-10 top-10 w-32 h-32 bg-blue-500 text-white flex items-center justify-center z-20">
-        Blue
+  <!-- 🔥 Responsive Navbar -->
+  <nav class="bg-black text-white p-4 flex justify-between items-center">
+
+    <h1 class="text-lg md:text-2xl font-bold">
+      MyWebsite
+    </h1>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex gap-6">
+      <a href="#" class="hover:text-gray-400">Home</a>
+      <a href="#" class="hover:text-gray-400">About</a>
+      <a href="#" class="hover:text-gray-400">Contact</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </nav>
+
+  <!-- 🔥 Hero Section -->
+  <section class="text-center py-12 px-4 md:py-20 md:px-10 bg-white">
+
+    <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
+      Build Responsive Websites
+    </h2>
+
+    <p class="text-gray-600 text-sm md:text-lg max-w-2xl mx-auto mb-6">
+      Learn how to create modern, mobile-friendly layouts using Tailwind CSS.
+    </p>
+
+    <button class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">
+      Get Started
+    </button>
+
+  </section>
+
+  <!-- 🔥 Responsive Cards Section -->
+  <section class="p-6 md:p-12">
+
+    <h3 class="text-xl md:text-3xl font-bold text-center mb-8">
+      Our Services
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white shadow p-6 rounded text-center">
+        <h4 class="text-lg md:text-xl font-semibold mb-2">
+          Web Design
+        </h4>
+        <p class="text-gray-600 text-sm md:text-base">
+          Responsive and modern website designs for all devices.
+        </p>
       </div>
 
-       <div class="absolute left-20 top-20 w-32 h-32 bg-red-500 text-white flex items-center justify-center z-30">
-        Red
+      <!-- Card 2 -->
+      <div class="bg-white shadow p-6 rounded text-center">
+        <h4 class="text-lg md:text-xl font-semibold mb-2">
+          Development
+        </h4>
+        <p class="text-gray-600 text-sm md:text-base">
+          Fast and scalable frontend development solutions.
+        </p>
       </div>
 
-   </div>
-  </body>
+      <!-- Card 3 -->
+      <div class="bg-white shadow p-6 rounded text-center">
+        <h4 class="text-lg md:text-xl font-semibold mb-2">
+          SEO
+        </h4>
+        <p class="text-gray-600 text-sm md:text-base">
+          Improve your website visibility and search ranking.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 🔥 Footer -->
+  <footer class="bg-black text-white text-center p-4 mt-10">
+    <p class="text-sm md:text-base">
+      © 2026 MyWebsite. All rights reserved.
+    </p>
+  </footer>
+
+</body>
 </html>
